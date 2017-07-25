@@ -4,14 +4,14 @@ This is a collection of PHP actions to test @akrabat's new [PHP kind for OpenWhi
 
 ## Simple action with params
 ```bash
-vi hello.php
+vi [hello.php](hello.php)
 wsk -i action update hello hello.php --kind php:7.1
 wsk -i action invoke hello -r -p name World
 ```
 
 ## Action connecting to MySQL
 ```bash
-vi mysql.php
+vi [mysql.php](mysql.php)
 cp template.local.env local.env
 vi local.env # Update with Bluemix or any other MySQL database service.
 source local.env
