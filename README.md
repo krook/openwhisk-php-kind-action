@@ -1,6 +1,6 @@
 # OpenWhisk PHP kind actions
 
-This is a collection of PHP actions to test @akrabat's new [PHP kind pull request](https://github.com/apache/incubator-openwhisk/pull/2415). It assumes you have built your own instance of OpenWhisk based on his fork.
+This is a collection of PHP actions to test @akrabat's new [PHP kind for OpenWhisk](https://github.com/apache/incubator-openwhisk/pull/2415). It assumes you have built your own instance of OpenWhisk based on his fork.
 
 ## Simple action with params
 ```bash

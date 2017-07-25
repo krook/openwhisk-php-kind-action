@@ -3,7 +3,7 @@ function main(array $args) : array
 {
   echo "Create, insert, update, delete data in a MySQL instance\n";
   $pdo = new PDO(sprintf('mysql:host=%s;port=%d;dbname=%s', $args['MYSQL_HOSTNAME'], 3306, $args['MYSQL_DATABASE']), $args['MYSQL_USERNAME'], $args['MYSQL_PASSWORD']);
-  // $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
   $name = $args['name'];
   $color = $args['color'];
