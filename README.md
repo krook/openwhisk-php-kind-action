@@ -12,8 +12,8 @@ wsk -i action invoke hello -r -p name World
 ## Action connecting to MySQL
 ```bash
 vi mysql.php
-cp template.local.env
-vi local.env
+cp template.local.env local.env
+vi local.env # Update with Bluemix or any other MySQL database service.
 source local.env
 wsk -i action update mysql mysql.php --kind php:7.1 \
 --param "MYSQL_HOSTNAME" $MYSQL_HOSTNAME \
