@@ -3,15 +3,17 @@
 This is a collection of PHP actions to test @akrabat's new [PHP kind for OpenWhisk](https://github.com/apache/incubator-openwhisk/pull/2415). It assumes you have built your own instance of OpenWhisk based on his fork.
 
 ## Simple action with params
+[hello.php](hello.php)
 ```bash
-vi [hello.php](hello.php)
+vi hello.php
 wsk -i action update hello hello.php --kind php:7.1
 wsk -i action invoke hello -r -p name World
 ```
 
 ## Action connecting to MySQL
+[mysql.php](mysql.php)
 ```bash
-vi [mysql.php](mysql.php)
+vi mysql.php
 cp template.local.env local.env
 vi local.env # Update with Bluemix or any other MySQL database service.
 source local.env
